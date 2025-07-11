@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAPS Kitchen</title>
+    <link rel="stylesheet" href="vac.css" />
+  </head>
+  <body>
+    <h3 id="h31">Location : Kanchipuram</h3>
+    <h1>🍔 NAPS Kitchen</h1>
+    <h3 id="h32">Contact : 0123456789</h3>
+    <img
+      id="h33"
+      src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
+      alt=""
+    />
+    <div id="screen"></div>
+    <div id="summary">
+      <h2 style="color: brown">🧾 Order Summary</h2>
+      <ul id="orderList"></ul>
+      <h2 style="margin-top: 20px; margin-left: 30px; color: darkcyan">
+        <strong>Total: ₹ <span id="totalAmount">0</span></strong>
+      </h2>
+      <button type="button" onclick="placeOrder()">Place Order</button>
+    </div>
+    <table id="orderForm">
+      <tr>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg"
+              alt="Burger"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Burger"
+                data-price="120"
+              />
+              Burger - ₹120
+            </label>
+            <input
+              style="margin-left: 14px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://content.jdmagicbox.com/comp/kanchipuram/a1/9999pxx44.xx44.140730101617.z2a1/catalogue/domino-s-pizza-kanchipuram-ho-kanchipuram-pizza-outlets-1fgvxlp.jpg"
+              alt="Pizza"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Pizza"
+                data-price="250"
+              />
+              Pizza - ₹250
+            </label>
+            <input
+              style="margin-left: 26px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800"
+              alt="Fries"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Fries"
+                data-price="80"
+              />
+              Fries - ₹80
+            </label>
+            <input
+              style="margin-left: 35px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://cdn.uengage.io/uploads/6670/image-687968-1644510439.jpeg"
+              alt="Coke"
+            /><br />
+            <label>
+              <input type="checkbox" name="item" value="Coke" data-price="50" />
+              Coke - ₹50
+            </label>
+            <input
+              style="margin-left: 34px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrg17t81Pbgk3UxMCRkPzNKpYK4Ciqb1buag&s"
+              alt="Naan"
+            /><br />
+            <label>
+              <input type="checkbox" name="item" value="Naan" data-price="60" />
+              Naan - ₹60
+            </label>
+            <input
+              style="margin-left: 33px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg"
+              alt="Paneergravy"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Gravy"
+                data-price="280"
+              />
+              Gravy - ₹280
+            </label>
+            <input
+              style="margin-left: 23px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://palatesdesire.com/wp-content/uploads/2022/09/Rasmalai-recipe@palates-desire.jpg"
+              alt="Rasmalai"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Rasmalai"
+                data-price="100"
+              />Rasmalai - ₹100
+            </label>
+            <input
+              style="margin-left: 2px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+        <td>
+          <div class="menu-item">
+            <img
+              src="https://recipe30.com/wp-content/uploads/2023/03/chicken-Biryani.jpg"
+              alt="Biriyani"
+            /><br />
+            <label>
+              <input
+                type="checkbox"
+                name="item"
+                value="Biriyani"
+                data-price="350"
+              />Biriyani - ₹350
+            </label>
+            <input
+              style="margin-left: 10px"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Qty"
+              disabled
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <button type="button" onclick="placeOrder()">Place Order</button>
+        </td>
+      </tr>
+    </table>
+
+    <script src="vac.js"></script>
+  </body>
+</html>
